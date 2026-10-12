@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.course-card {
+  width: auto;
+  border: 1px solid white;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+
+  .course-list {
+    min-width: 200px;
+    max-width: 200px;
+    height: fit-content;
+    border: 1px solid white;
+    padding: 1em;
+    margin: auto ;
+    display: inline-block;
+  }
+}
