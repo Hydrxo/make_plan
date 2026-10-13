@@ -1,13 +1,15 @@
 import React from 'react'
 import './App.css'
 import { Flex, Text, Button } from '@radix-ui/themes'
+import Modal from './components/Modal'
 
 function App() {
-  const addCourse = () =>{
+  const addCourse = () => {
     console.log("add course")
   }
   return (
     <>
+      <Modal />
       <Flex direction="column" gap="4">
         <h2>Planner</h2>
         <button onClickCapture={console.log("add semester")}>Add Semester</button>
@@ -27,7 +29,7 @@ function App() {
         </Flex>
       </Flex>
     </>
-  )
-}
+  );
+};
 
 export default App
