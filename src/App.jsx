@@ -1,16 +1,14 @@
-import React from 'react'
 import './App.css'
-import { Flex, Text, Button } from '@radix-ui/themes'
-import Modal from './components/Modal'
+import Modal from './components/Modal/Modal'
 
 function App() {
 
   return (
     <>
-      <Flex direction="column" gap="4">
+      <div className='inline-block item-center'>
         <h2>Planner</h2>
         <button>Add Semester</button>
-        <Flex direction="column" className="course-card" gap="4">
+        <div className="course-card">
           <div className="course-list" id="1">
             <Modal />
           </div>
@@ -23,8 +21,8 @@ function App() {
           <div className="course-list" id="3">
             <Modal />
           </div>
-        </Flex>
-      </Flex>
+        </div>
+      </div>
     </>
   );
 };

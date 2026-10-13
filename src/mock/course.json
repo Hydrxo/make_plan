@@ -3,18 +3,21 @@
         "course_id": "1",
         "course_code": "080103061",
         "course_name": "Practice English 1",
-        "course_category": "LANG"
+        "course_category": "LANG",
+        "course_prerequisite": ""
     },
     {
         "course_id": "2",
         "course_code": "080103062",
         "course_name": "Practice English 2",
-        "course_category": "LANG"
+        "course_category": "LANG",
+        "course_prerequisite": "080103062"
     },
     {
         "course_id": "3",
         "course_code": "060223141",
         "course_name": "Data Commu",
-        "course_category": "SCI"
+        "course_category": "NET",
+        "course_prerequisite": ""
     }
 ]
