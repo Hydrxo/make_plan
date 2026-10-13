@@ -1,40 +1,80 @@
 import React, { useState } from "react";
-import "./Modal.css"
+import "./Modal.css";
+import course from "../mock/course.json";
 
 export default function Modal() {
     const [modal, setModal] = useState(false);
+    const [selectedId, setSelectedId] = useState("");
 
     const toggleModal = () => {
         setModal(!modal);
     };
 
-    if (modal) {
-        document.body.classList.add('active-modal')
-    } else {
-        document.body.classList.remove('active-modal')
+    // Find the selected course
+    const selectedCourse = course.find(
+        (item) => String(item.course_id) === selectedId
+    );
+
+    // Generate options from JSON
+    const courseElement = [];
+
+    for (let i = 0; i < course.length; i++) {
+        courseElement.push(
+            <option
+                key={course[i].course_id}
+                value={course[i].course_id}
+            >
+                {course[i].course_code} {course[i].course_name}
+            </option>
+        );
     }
 
     return (
         <>
             <button onClick={toggleModal} className="btn-modal">
-                Open
+                + Add Course
             </button>
 
             {modal && (
                 <div className="modal">
                     <div onClick={toggleModal} className="overlay"></div>
+
                     <div className="modal-content">
-                        <h2>Hello Modal</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-                            perferendis suscipit officia recusandae, eveniet quaerat assumenda
-                            id fugit, dignissimos maxime non natus placeat illo iusto!
-                            Sapiente dolorum id maiores dolores? Illum pariatur possimus
-                            quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
-                            placeat tempora vitae enim incidunt porro fuga ea.
-                        </p>
-                        <button className="close-modal" onClick={toggleModal}>
-                            CLOSE
+                        <h2>Add Subject</h2>
+
+                        <select
+                            value={selectedId}
+                            onChange={(e) => setSelectedId(e.target.value)}
+                        >
+                            <option value="">-- Select Course --</option>
+                            {courseElement}
+                        </select>
+
+                        {/* Display selected course information */}
+                        {selectedCourse && (
+                            <div className="course-detail">
+                                <h3>Course Information</h3>
+                                <p>
+                                    <strong>Course Code:</strong>{" "}
+                                    {selectedCourse.course_code}
+                                </p>
+
+                                <p>
+                                    <strong>Course Name:</strong>{" "}
+                                    {selectedCourse.course_name}
+                                </p>
+                                <p>
+                                    <strong>Course ID:</strong>{" "}
+                                    {selectedCourse.course_id}
+                                </p>
+                            </div>
+                        )}
+
+                        <button
+                            className="close-modal"
+                            onClick={toggleModal}
+                        >
+                            X
                         </button>
                     </div>
                 </div>
