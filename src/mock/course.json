@@ -1,23 +1,107 @@
 [
     {
         "course_id": "1",
-        "course_code": "080103061",
-        "course_name": "Practice English 1",
-        "course_category": "LANG",
+        "course_code": "050113403",
+        "course_name": "CHEMISTRY IN EVERYDAY LIFE",
+        "course_credit": 3,
         "course_prerequisite": ""
     },
     {
         "course_id": "2",
-        "course_code": "080103062",
-        "course_name": "Practice English 2",
-        "course_category": "LANG",
-        "course_prerequisite": "080103062"
+        "course_code": "060223111",
+        "course_name": "DIGITAL ELECTRONICS",
+        "course_credit": 3,
+        "course_prerequisite": ""
     },
     {
         "course_id": "3",
-        "course_code": "060223141",
-        "course_name": "Data Commu",
-        "course_category": "NET",
+        "course_code": "060223112",
+        "course_name": "DIGITAL ELECTRONICS LAB",
+        "course_credit": 3,
         "course_prerequisite": ""
+    },
+    {
+        "course_id": "4",
+        "course_code": "060223114",
+        "course_name": "STRUCTURAL PROGRAMMING",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "5",
+        "course_code": "060223123",
+        "course_name": "DATABASE SYSTEM",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "6",
+        "course_code": "060223130",
+        "course_name": "COMPUTER BASIC SKILL",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "7",
+        "course_code": "080103061",
+        "course_name": "PRACTICAL ENGLISH I",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "8",
+        "course_code": "060223115",
+        "course_name": "SYSTEM ANALYSIS & DESIGN",
+        "course_credit": 3,
+        "course_prerequisite": "060223123"
+    },
+    {
+        "course_id": "9",
+        "course_code": "060223117",
+        "course_name": "OBJECT-ORIENTED PROGRAM LAB",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "10",
+        "course_code": "060223132",
+        "course_name": "OBJECT-ORIENTED PROGRAM",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "11",
+        "course_code": "060223133",
+        "course_name": "WEB APPLICATION DEVELOP",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "12",
+        "course_code": "060223134",
+        "course_name": "WEB APPLICATION DEVELOP LAB",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "13",
+        "course_code": "060223136",
+        "course_name": "INFOR TECH PROJECT STUDY",
+        "course_credit": 3,
+        "course_prerequisite": ""
+    },
+    {
+        "course_id": "14",
+        "course_code": "080103062",
+        "course_name": "PRACTICAL ENGLISH II",
+        "course_credit": 3,
+        "course_prerequisite": "080103061"
+    },
+    {
+        "course_id": "15",
+        "course_code": "060223119",
+        "course_name": "DATA STRUCTURE & ALGORITHM",
+        "course_credit": 3,
+        "course_prerequisite": "060223114"
     }
 ]
