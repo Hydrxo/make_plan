@@ -12,9 +12,11 @@
   "dependencies": {
     "@radix-ui/themes": "^3.3.0",
     "@tailwindcss/vite": "^4.3.3",
+    "axios": "^1.20.0",
     "cors": "^2.8.6",
     "express": "^5.3.0",
     "mysql": "^2.18.1",
+    "nodemon": "^3.1.14",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "tailwindcss": "^4.3.3"
