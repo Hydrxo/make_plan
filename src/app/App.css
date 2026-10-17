@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+text {
+  color: black;
+  text-align: center;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+
+  .app-shell {
+    .app-main {
+      @apply border;
+
+      .planner {
+        @apply flex flex-row m-2;
+
+        .planner-y {
+          @apply flex flex-col m-2 p-2 border;
+
+          .planner-y-con {
+            @apply flex flex-row justify-center;
+          }
+
+          .planner-s {
+            @apply flex flex-row border-0;
+
+            .planner-sl {
+              @apply w-1/1 flex flex-col m-2;
+
+              .planner-sl-header {
+                @apply w-1/1 flex flex-row justify-between;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  @apply justify-center items-center text-center;
+}
+
+.submit {
+  @apply m-auto p-2 h-10 flex text-center justify-center rounded-full bg-green-600 hover:bg-green-700;
+}
+
+.add {
+  @apply p-2 flex ml-auto justify-center border rounded-2xl;
+}
+
+.add:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+
+@media (max-width: 760px) {
+  .app-main {
+    padding: 20px 16px 36px;
+  }
+
+  .semester-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .semester-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

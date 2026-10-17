@@ -1,62 +1,75 @@
+@import "tailwindcss";
+
 .btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+    @apply flex w-full flex-row items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white p-2 text-sm font-semibold text-slate-700 transition hover:border-green-500 hover:bg-green-50;
 }
 
-.modal,
-.overlay {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
+.modal {
+    @apply fixed inset-0 z-50 flex items-center justify-center p-4;
 }
 
 .overlay {
-    background: rgba(49, 49, 49, 0.8);
+    @apply absolute inset-0 bg-slate-950/60 backdrop-blur-sm;
 }
 
 .modal-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    @apply relative z-10 max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-2xl bg-white p-6 text-slate-900 shadow-2xl;
+}
+
+.modal-content h2 {
+    @apply mb-5 pr-8 text-left text-xl font-bold text-slate-900;
+}
+
+.modal-content select {
+    @apply mb-4 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 outline-none focus:border-green-600 focus:ring-2 focus:ring-green-200;
 }
 
 .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
+    @apply absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-lg font-semibold text-slate-600 transition hover:bg-slate-200 hover:text-slate-900;
+}
+
+.modal-content #submit {
+    @apply mx-auto mt-4 min-w-28 cursor-pointer rounded-full bg-green-600 px-5 py-2 font-semibold text-white transition hover:bg-green-700;
+}
+
+.modal-content #submit[hidden] {
+    display: none;
+}
+
+.course-detail {
+    @apply space-y-2 rounded-xl bg-slate-50 p-4 text-left text-sm text-slate-700;
+}
+
+.course-detail h3 {
+    @apply mb-2 text-left font-semibold text-slate-900;
+}
+
+.course-detail p {
+    @apply text-left text-slate-700;
 }
 
 .course-list-items {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    @apply flex flex-col gap-2;
 }
 
 .course-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 8px;
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: 8px;
+    @apply flex items-center justify-between gap-2 rounded-lg border border-slate-200 bg-slate-50 p-2 text-left;
+}
+
+.course-list-item-details {
+    @apply text-left text-sm text-slate-800;
 }
 
 .remove-course {
-    flex: 0 0 auto;
-    padding: 2px 8px;
+    @apply inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full hover:bg-red-50;
+}
+
+.total-credit {
+    @apply mt-2 text-center text-sm font-medium text-slate-700;
+}
+
+@media (max-width: 640px) {
+    .modal-content {
+        @apply p-5;
+    }
 }

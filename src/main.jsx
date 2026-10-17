@@ -1,13 +1,26 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import Home from './app/App'
+import Navbar from './components/Navigation/Navbar'
 import './index.css'
-import App from './App.jsx'
-import { Theme } from "@radix-ui/themes";
+
+// import {
+//   createBrowserRouter,
+//   RouterProvider,
+// } from "react-router-dom";
+
+// import Home from './app/App.jsx';
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />,
+//   }]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Theme>
-      <App />
-    </Theme>
+    {/* <RouterProvider router={router} /> */}
+    <Navbar />
+    {/* <Home /> */}
   </StrictMode>,
 )

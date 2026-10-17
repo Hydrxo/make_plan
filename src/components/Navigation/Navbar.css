@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+.nav-bar {
+    @apply flex flex-row border-b justify-between text-center;
+
+    .content {
+        @apply border;
+        img{
+            @apply p-2 m-2 ;
+        }
+    }
+
+    .nav {
+        @apply align-middle justify-center m-auto;
+        .nav-item {
+            @apply inline-block border;
+
+            ul {
+                @apply flex flex-row ;
+
+                li {
+                    @apply list-none;
+
+                    a {
+                        @apply duration-300 ease-in-out no-underline p-2 m-2;
+                    }
+
+                    a:hover {
+                        @apply duration-200 ease-in-out text-blue-500;
+                    }
+                }
+            }
+        }
+    }
+}

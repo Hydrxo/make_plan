@@ -1,0 +1,170 @@
+[
+  {
+    "course_code": "050113403",
+    "course_name": "CHEMISTRY IN EVERYDAY LIFE",
+    "course_credit": 3,
+    "course_grade": "C+",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223111",
+    "course_name": "DIGITAL ELECTRONICS",
+    "course_credit": 3,
+    "course_grade": "B",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223112",
+    "course_name": "DIGITAL ELECTRONICS LAB",
+    "course_credit": 1,
+    "course_grade": "B+",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223114",
+    "course_name": "STRUCTURAL PROGRAMMING LAB",
+    "course_credit": 1,
+    "course_grade": "B",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223123",
+    "course_name": "DATABASE SYSTEM",
+    "course_credit": 3,
+    "course_grade": "B+",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223130",
+    "course_name": "COMPUTER BASIC SKILL",
+    "course_credit": 1,
+    "course_grade": "A",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223131",
+    "course_name": "STRUCTURAL PROGRAMMING",
+    "course_credit": 2,
+    "course_grade": "B",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "080103061",
+    "course_name": "PRACTICAL ENGLISH I",
+    "course_credit": 3,
+    "course_grade": "A",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223115",
+    "course_name": "SYSTEM ANALYSIS & DESIGN",
+    "course_credit": 3,
+    "course_grade": "B+",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223117",
+    "course_name": "OBJECT-ORIENTED PROGRAM LAB",
+    "course_credit": 1,
+    "course_grade": "C",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223132",
+    "course_name": "OBJECT-ORIENTED PROGRAM",
+    "course_credit": 2,
+    "course_grade": "B",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223133",
+    "course_name": "WEB APPLICATION DEVELOP",
+    "course_credit": 2,
+    "course_grade": "B",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223134",
+    "course_name": "WEB APPLICATION DEVELOP LAB",
+    "course_credit": 1,
+    "course_grade": "C",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223136",
+    "course_name": "INFOR TECH PROJECT STUDY",
+    "course_credit": 2,
+    "course_grade": "A",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "080103062",
+    "course_name": "PRACTICAL ENGLISH II",
+    "course_credit": 3,
+    "course_grade": "A",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223129",
+    "course_name": "TRAINING",
+    "course_credit": 2,
+    "course_grade": "A",
+    "year_enroll": 2568
+  },
+  {
+    "course_code": "060223124",
+    "course_name": "DATA COMMU & COMP NETWORK",
+    "course_credit": 3,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "060223135",
+    "course_name": "COMP ARCHITECTURE & ORGAN",
+    "course_credit": 3,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "060223137",
+    "course_name": "INFOR TECH SPECIAL PROJECT",
+    "course_credit": 4,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "060223138",
+    "course_name": "INTERNET OF THINGS & SMART SYS",
+    "course_credit": 3,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "060223139",
+    "course_name": "INTERNET OF THINGS & SMART LAB",
+    "course_credit": 1,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "060223218",
+    "course_name": "DIGITAL IMAGE PROCESSING",
+    "course_credit": 3,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "080203905",
+    "course_name": "ECONOMICS FOR EVERYDAY LIFE",
+    "course_credit": 3,
+    "course_grade": null,
+    "year_enroll": 2569
+  },
+  {
+    "course_code": "080303101",
+    "course_name": "GENERAL PSYCHOLOGY",
+    "course_credit": 3,
+    "course_grade": null,
+    "year_enroll": 2569
+  }
+]
