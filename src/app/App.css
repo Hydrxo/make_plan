@@ -20,9 +20,9 @@ h5,
 h6,
 a,
 text {
-  color: black;
   text-align: center;
 }
+
 
 #root {
   width: 100%;
@@ -37,10 +37,13 @@ text {
         @apply flex flex-row m-2;
 
         .planner-y {
-          @apply flex flex-col m-2 p-2 border;
+          @apply flex flex-col  m-2 p-2 border text-black;
 
           .planner-y-con {
-            @apply flex flex-row justify-center;
+            @apply flex flex-row leading-normal border;
+            h2{
+              @apply text-black m-auto border;
+            }
           }
 
           .planner-s {

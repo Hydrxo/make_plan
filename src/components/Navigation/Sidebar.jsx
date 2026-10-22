@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./Sidebar.css";
 
 const navigationItems = [
-    { label: "Planner", href: "#planner", icon: "▦" },
-    { label: "Semester plan", href: "#semester-plan", icon: "▤" },
+    { label: "Planner", href: "/planner", icon: "▦" },
+    { label: "Semester plan", href: "/progress", icon: "▤" },
 ];
 
 export default function Sidebar() {
